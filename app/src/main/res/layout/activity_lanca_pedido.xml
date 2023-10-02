@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LancaPedidoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedidos"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecão de Cliente:"
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCliente"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErroCliente"
+        android:text="O cliente deve ser selecionado!"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecão de Item:"
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spItem"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvErroItem"
+        android:text="O item deve ser selecionado!!"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de Itens"
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Informe a quantidade aqui"
+        android:inputType="number"
+        android:id="@+id/etQuantidade"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:textSize="30dp"
+        android:id="@+id/btAdicionar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMostrarPedido"
+        android:textSize="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbAVista"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="À vista"
+            />
+
+        <RadioButton
+            android:id="@+id/rbAPrazo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A prazo"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etParcela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade de Parcelas"
+        android:inputType="number"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lvParcela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMostrar"
+        android:textSize="20dp"
+        android:text="Valor Total: R$0.00"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Pedido"
+        android:textSize="30dp"
+        android:id="@+id/btPedido"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPedido"
+        android:textSize="25dp"
+        />
+
+
+
+
+</LinearLayout>
+</ScrollView>
